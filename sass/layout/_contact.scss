@@ -1,0 +1,81 @@
+@use "../base";
+@use "../abstracts";
+.contact {
+  background-image: url("../../assets/images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 863px;
+  width: 100%;
+  position: relative;
+  &__inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  &__box {
+    background-color: base.$main-text-color-hover;
+    border-radius: 7rem;
+  }
+  &__wrapper {
+    display: flex;
+    padding: 6.4rem;
+    gap: 0 5rem;
+  }
+  &__left {
+    width: 350px;
+    flex-grow: 0;
+  }
+  &__right {
+    flex: 1;
+  }
+  &__title {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1.17;
+    color: #f5ece7;
+  }
+  &__description {
+    margin-top: 3.5rem;
+    font-size: 2.56rem;
+    line-height: 1.2;
+    color: #f5ece7;
+  }
+  // Responsive
+  @include abstracts.maxWidth(1023.98px) {
+    background-size: cover;
+    // &__inner {
+    //   display: block;
+    // }
+    // &__box {
+    //   border-radius: unset;
+    // }
+    // &__wrapper {
+    //   gap: 0 2rem;
+    // }
+  }
+  @include abstracts.maxWidth(767.98px) {
+    &__wrapper {
+      flex-direction: column;
+      padding: 2rem;
+    }
+    &__left {
+      margin-bottom: 1.5rem;
+    }
+    &__title {
+      font-size: 3.2rem;
+    }
+  }
+  @include abstracts.maxWidth(575.98px) {
+    &__left {
+      text-align: center;
+    }
+    &__title {
+      font-size: 2.6rem;
+    }
+    &__description {
+      display: none;
+    }
+  }
+}

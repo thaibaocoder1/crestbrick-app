@@ -1,0 +1,51 @@
+main {
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  text-decoration: none;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 998;
+}
+.scroll {
+  width: 5rem;
+  height: 5rem;
+  background-color: #113e2c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d3f188;
+  cursor: pointer;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 1000;
+  display: none;
+}
+.scroll > i {
+  user-select: none;
+  pointer-events: none;
+}
+.fixed {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 0 4px 6px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s ease-in-out;
+}

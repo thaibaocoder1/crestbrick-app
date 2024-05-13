@@ -1,0 +1,16 @@
+{
+  "name": "apply-cv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass sass:assets/css -w"
+  },
+  "dependencies": {
+    "sass": "^1.77.1"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

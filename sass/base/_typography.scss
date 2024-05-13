@@ -1,0 +1,12 @@
+@use "./variables" as var;
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Sinhala MN";
+  text-rendering: optimizeLegibility;
+  background-color: var.$main-bg-color;
+}
